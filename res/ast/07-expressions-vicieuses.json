@@ -1,0 +1,73 @@
+{
+  "type": "File",
+  "errors": [],
+  "program": {
+    "type": "Program",
+    "sourceType": "module",
+    "interpreter": null,
+    "body": [
+      {
+        "type": "VariableDeclaration",
+        "declarations": [
+          {
+            "type": "VariableDeclarator",
+            "id": { "type": "Identifier", "name": "x" },
+            "init": { "type": "NumericLiteral", "value": 0 }
+          }
+        ],
+        "kind": "var"
+      },
+      {
+        "type": "ExpressionStatement",
+        "expression": {
+          "type": "BinaryExpression",
+          "left": {
+            "type": "UpdateExpression",
+            "operator": "++",
+            "prefix": false,
+            "argument": { "type": "Identifier", "name": "x" }
+          },
+          "operator": "+",
+          "right": {
+            "type": "UpdateExpression",
+            "operator": "++",
+            "prefix": false,
+            "argument": { "type": "Identifier", "name": "x" }
+          }
+        }
+      },
+      {
+        "type": "VariableDeclaration",
+        "declarations": [
+          {
+            "type": "VariableDeclarator",
+            "id": { "type": "Identifier", "name": "y" },
+            "init": { "type": "NumericLiteral", "value": 0 }
+          }
+        ],
+        "kind": "var"
+      },
+      {
+        "type": "ExpressionStatement",
+        "expression": {
+          "type": "BinaryExpression",
+          "left": {
+            "type": "UpdateExpression",
+            "operator": "++",
+            "prefix": true,
+            "argument": { "type": "Identifier", "name": "y" }
+          },
+          "operator": "+",
+          "right": {
+            "type": "UpdateExpression",
+            "operator": "++",
+            "prefix": true,
+            "argument": { "type": "Identifier", "name": "y" }
+          }
+        }
+      }
+    ],
+    "directives": []
+  },
+  "comments": []
+}
